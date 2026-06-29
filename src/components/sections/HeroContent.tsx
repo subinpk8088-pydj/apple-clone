@@ -3,24 +3,26 @@ import HeroButtons from "./HeroButtons";
 export default function HeroContent() {
   return (
     <div className="max-w-xl text-center lg:text-left">
-      <p className="mb-4 text-sm font-semibold uppercase tracking-[0.5em] text-blue-600">
-        NEW GENERATION
+
+      <p className="mb-4 text-sm font-semibold uppercase tracking-[0.45em] text-blue-600">
+        New
       </p>
 
-      <h1 className="text-6xl font-bold text-gray-900 md:text-8xl">
-        Lumina One
+      <h1 className="text-5xl font-semibold leading-none tracking-tight text-[#1d1d1f] md:text-7xl">
+        iPhone Pro
       </h1>
 
-      <h2 className="mt-6 text-3xl font-medium text-gray-700">
-        Beyond Imagination.
+      <h2 className="mt-5 text-2xl font-medium text-neutral-700">
+        Titanium. Powerful. Beautiful.
       </h2>
 
-      <p className="mt-8 text-lg leading-8 text-gray-600">
-        Crafted with precision, powered by next-generation performance, and
-        designed to elevate every interaction.
+      <p className="mt-8 text-lg leading-8 text-neutral-600">
+        Experience incredible performance, an advanced camera system,
+        and a design engineered to feel effortless every day.
       </p>
 
       <HeroButtons />
+
     </div>
   );
 }

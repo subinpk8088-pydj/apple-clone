@@ -1,21 +1,18 @@
+import phone from "../../assets/images/hero/phone.jpg";
+
 export default function HeroImage() {
   return (
-    <div className="flex items-center justify-center">
-      <div className="relative h-[650px] w-[320px] rounded-[60px] bg-black p-2 shadow-2xl">
-        <div className="absolute left-1/2 top-3 h-6 w-32 -translate-x-1/2 rounded-full bg-neutral-900" />
+    <div className="relative flex items-center justify-center">
 
-        <div className="flex h-full items-center justify-center rounded-[50px] bg-gradient-to-b from-neutral-700 via-neutral-900 to-black">
-          <div className="text-center">
-            <h2 className="text-5xl font-bold text-white">
-              Lumina
-            </h2>
+      {/* Background Glow */}
+      <div className="absolute h-[500px] w-[500px] rounded-full bg-blue-300/20 blur-[120px]" />
 
-            <p className="mt-3 text-gray-400">
-              One
-            </p>
-          </div>
-        </div>
-      </div>
+      <img
+        src={phone}
+        alt="iPhone"
+        className="relative w-[320px] rounded-[30px] shadow-[0_50px_120px_rgba(0,0,0,0.25)] transition duration-500 hover:scale-[1.03] md:w-[420px]"
+      />
+
     </div>
   );
 }
